@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css positions</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        height: 1000px;
+        background-color: bisque;
+      }
+
+      .box {
+        display: inline-block;
+        border: 2px solid rgb(22, 19, 19);
+        height: 100px;
+        width: 100px;
+        margin: 2px;
+        text-align: center;
+      }
+
+      /* position is static by default */
+
+      /* relative: we can change the position of the box relative to its normal position
+      and will leave a gap at its normal position and can shift top left right bottom hpwever w elike */
+      /* #box3 {
+        position: relative;
+        top: 10px;
+        left: 30px;
+      } */
+
+      /* absolute: we can change the position of the box relative to the first parent conatiner and not its padosi ..padosi elemnets will shift and take up space*/
+      /* #box3{
+        position: absolute;
+        top:2px;
+        
+      } */
+
+       /* fixed : even if u scroll down box 3 will remained fixed to the right of 4 px
+      #box3{
+        position: fixed;
+        right: 4px;
+      } */
+       
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+    </div>
+  </body>
+</html>
