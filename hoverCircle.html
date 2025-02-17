@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        position: relative;
+        height: 200px;
+        width: 100px;
+      }
+      .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        transition: transform 0.3s ease-in-out, z-index 0.3s ease;
+      }
+
+      .circle:nth-child(1) {
+        background-color: blue;
+        left: 0px;
+        z-index: 3;
+      }
+      .circle:nth-child(2) {
+        background-color: red;
+        left: 50px;
+        z-index: 2;
+      }
+      .circle:nth-child(3) {
+        background-color: green;
+        left: 100px;
+        z-index: 1;
+      }
+
+      .circle:hover {
+        transform: scale(1.1);
+        z-index: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>
