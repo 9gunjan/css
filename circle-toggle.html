@@ -82,8 +82,10 @@
 
     <script>
       document.querySelector(".toggleBtn").addEventListener("click", () => {
-        const container = document.querySelector(".container");
-        container.classList.toggle('vertical');
+        setTimeout(() => {
+          const container = document.querySelector(".container");
+          container.classList.toggle("vertical");
+        }, 1000);
       });
     </script>
   </body>
